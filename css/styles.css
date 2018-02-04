@@ -74,7 +74,7 @@ Desktop Nav Styles
 .logo {
   float: left;
   color: red;
-  padding-left: 90px;
+  padding-left: 50px;
 }
 
 .desktop-nav ul {
@@ -83,7 +83,7 @@ Desktop Nav Styles
     color: white;
     list-style-type: none;
     float: right;
-    padding: 10px 100px;
+    padding: 10px 50px;
     letter-spacing: 2px;
 }
 
@@ -311,7 +311,7 @@ Mobile Nav Styles
 * * * *About Page styles
 ************************/
 .about-hero {
-  height: 300px;
+  height: 150px;
   background: linear-gradient(to right, #e52d27, #b31217);
 }
 
@@ -322,8 +322,8 @@ Mobile Nav Styles
 
 .about-header {
   font-family: 'Lobster', cursive;
-  padding-top: 120px;
-  font-size: 60px;
+  padding-top: 40px;
+  font-size: 50px;
 }
 
 .text-container {
@@ -348,6 +348,84 @@ padding: 0 200px;
 padding-bottom: 40px;
 }
 
+/* Gallery Page */
+
+.row {
+  margin-top: 20px;
+}
+
+
+.col-sm-12 {
+  margin-bottom: 20px;
+}
+.first-col {
+  background-image: url(../Imgs/gallery-1.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  height: 200px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.second-col {
+  background-image: url(../Imgs/gallery-2.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  height: 200px;
+  text-align: center;
+
+}
+
+.third-col {
+  background-image: url(../Imgs/gallery-3.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  height: 200px;
+  text-align: center;
+}
+
+.fourth-col {
+  background-image: url(../Imgs/gallery-4.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  height: 200px;
+  text-align: center;
+}
+
+.col-md-6 {
+  height: auto;
+  text-align: center;
+}
+
+.card {
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6));
+  border-radius: 0;
+  padding: 10px;
+  color: white;
+  border-top: 0px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  align-items: center;
+  /* box-shadow: 5px 5px 5px black; */
+}
+
+.card button {
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background: linear-gradient(to right, #e52d27, #b31217);
+}
+
+.card a {
+  color: white;
+  font-size: 12px;
+}
 .footer-container {
   display: flex;
   flex-direction: row;
