@@ -4,8 +4,7 @@
 
 header {
     background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
-    height: 100px;
-    padding-top: 30px;
+    height: auto;
     width: 100%;
 }
 
@@ -35,7 +34,6 @@ HERO STYLES
     text-align: left;
     font-size: 80px;
     margin-bottom: 10px;
-
 }
 
 .hero p {
@@ -66,66 +64,6 @@ HERO STYLES
     margin-right: 210px;
 }
 
-
-/* * * * * * * * *
-Desktop Nav Styles
-* * * * * * * * * */
-
-.logo {
-  float: left;
-  color: red;
-  padding-left: 50px;
-}
-
-.desktop-nav ul {
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    color: white;
-    list-style-type: none;
-    float: right;
-    padding: 10px 50px;
-    letter-spacing: 2px;
-}
-
-.desktop-nav li {
-    display: inline-block;
-    margin-left: 35px;
-}
-
-.desktop-nav a {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-/* * * * * * * * *
-Mobile Nav Styles
-* * * * * * * */
-
-.mobile-nav {
-  display: none;
-}
-
-.mobile-nav .hamburger-container {
-  width: 10%;
-  display: inline-block;
-  margin-top: 15px;
-  float: right;
-}
-
-.mobile-nav button {
-    height: 20px;
-    border: none;
-    color: white;
-    background: transparent;
-}
-
-.logo i {
-  float: left;
-  margin-top: 5px;
-  display: inline-block;
-}
 
 /* * * * * * * * * * *
 * * * Middle header
@@ -213,7 +151,6 @@ Mobile Nav Styles
 
 .first-box:hover .car-text {
     transform: translateX(50px);
-
 }
 
 .first-box:hover .current {
@@ -245,8 +182,6 @@ Mobile Nav Styles
   transition: 0.4s;
   transform: translateY(-100px);
 }
-
-
 
 .quote {
     display: flex;
@@ -289,12 +224,12 @@ Mobile Nav Styles
 
 .quote input {
   box-shadow: 5px 5px 5px black;
-
 }
 
 .quote textarea {
   box-shadow: 5px 5px 5px black;
 }
+
 .quote button {
   color: white;
   font-weight: 700;
@@ -304,8 +239,6 @@ Mobile Nav Styles
   padding: 10px 30px;
   background: linear-gradient(to right, #e52d27, #b31217);
 }
-
-
 
 /************************
 * * * *About Page styles
@@ -332,7 +265,6 @@ Mobile Nav Styles
   letter-spacing: 1px;
 }
 
-
 .text-container .top-paragraph {
   padding-top: 60px;
   padding-left: 200px;
@@ -354,10 +286,10 @@ padding-bottom: 40px;
   margin-top: 20px;
 }
 
-
 .col-sm-12 {
   margin-bottom: 20px;
 }
+
 .first-col {
   background-image: url(../Imgs/gallery-1.jpg);
   background-size: cover;
@@ -375,7 +307,6 @@ padding-bottom: 40px;
   opacity: .8;
   height: 200px;
   text-align: center;
-
 }
 
 .third-col {
@@ -426,6 +357,7 @@ padding-bottom: 40px;
   color: white;
   font-size: 12px;
 }
+
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -433,7 +365,7 @@ padding-bottom: 40px;
   align-items: center;
   background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8));
   color: white;
-  height: 100px;
+  height: 120px;
 }
 
 .footer-ul {
@@ -448,19 +380,57 @@ padding-bottom: 40px;
   color: white;
 }
 
+.navbar {
+     background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+     font-family: 'Lato', sans-serif;
+ }
+
+.navbar-light .navbar-nav .nav-link {
+     color: white;
+     float: right;
+ }
+
+ .navbar-light .navbar-nav .active>.nav-link {
+     color: white;
+     float: right;
+ }
+
+ .navbar-light .navbar-nav .nav-link.disabled {
+     color: white;
+     float: right;
+     cursor: pointer;
+ }
+
+ .navbar-light .navbar-brand {
+     color: red;
+ }
+
+ .navbar-light .navbar-brand:hover {
+     color: white;
+ }
+
+ .navbar-light .navbar-toggler {
+     background: white;
+ }
+
+.navbar-light .navbar-nav .nav-link:hover  {
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar-toggleable-md .navbar-collapse {
+    align-items: right;
+}
+
+.navbar-nav .mr-auto {
+    margin-right: 0;
+}
 
 @media (max-width: 1000px) {
 
-  .mobile-nav {
-    display: block;
-}
 
   .desktop-nav {
     display: none;
-}
-
-  .mobile-nav .hamburger-container {
-    margin-top: 0;
 }
 
   .hero {
@@ -491,6 +461,9 @@ padding-bottom: 40px;
     letter-spacing: 1px;
 }
 
+
+
+
 @media (max-width: 800px) {
 
     header {
@@ -499,23 +472,6 @@ padding-bottom: 40px;
         height: 50px;
     }
 
-    .logo {
-      padding-left: 0px;
-      margin-top: 10px;
-    }
-
-    .logo i {
-      padding-left: 5px;
-    }
-
-    .mobile-nav .hamburger-container {
-      margin-top: 15px;
-      width: 8%;
-    }
-
-    .mobile-nav .hamburger-container i {
-      /* padding-right: 10px; */
-    }
     .middle .header-2 {
       padding-top: 100px;
     }
@@ -584,6 +540,7 @@ padding-bottom: 40px;
     .in-progress h2{
       display: none;
     }
+
     .footer-ul li {
       list-style-type: none;
       padding: 0 30px;
@@ -592,7 +549,6 @@ padding-bottom: 40px;
     .request-link {
       margin-right: 0;
     }
-
 
     .about-header {
       font-size: 40px;
@@ -603,6 +559,7 @@ padding-bottom: 40px;
       padding-left: 40px;
       padding-right: 40px;
     }
+
     .text-container .second-paragraph {
     padding: 0 40px;
     }

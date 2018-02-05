@@ -15,28 +15,33 @@
   </head>
   <body>
     <header>
-    <!-- Desktop Nav -->
-      <div class="desktop-nav">
-        <div class="logo"><i class="fa fa-car fa-2x" aria-hidden="true"></i></div>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="fa fa-car fa-2x" aria-hidden="true"></i></a>
 
-          <ul>
-            <li><a href='index.html'>Home</a></li>
-            <!-- <li><a href='#'>In Progress</a></li> -->
-            <li><a href='gallery.html'>Gallery</a></li>
-            <li><a href='about.html'>About</a></li>
-            <!-- <li><a href='#'>Contact</a></li> -->
-        </ul>
-      </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="index.html #bottom">Contact Us</a>
+                    </li>
+                </ul>
 
-    <!-- Mobile Nav -->
-
-      <div class="mobile-nav">
-        <div class="logo"><i class="fa fa-car fa-2x" aria-hidden="true"></i></div>
-        <div class="hamburger-container">
-          <button><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
-        </div>
-      </div>
+            </div>
+        </nav>
     </header>
+
+    <script src="./app.js" charset="utf-8"></script>
 
     <section class='about-hero'>
         <div class="about-hero-container">
@@ -84,13 +89,9 @@
               <button><a href="#">View Car</a></button>
             </div>
           </div>
-
-
           </div>
         </div>
-
       </div>
-
     </section>
 
     <footer>
@@ -103,12 +104,9 @@
       </div>
     </footer>
 
-
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   </body>
 </html>

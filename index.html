@@ -17,28 +17,33 @@
 
     <body>
         <header>
-            <!-- Desktop Nav -->
-            <div class="desktop-nav">
-                <div class="logo"><i class="fa fa-car fa-2x" aria-hidden="true"></i></div>
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-car fa-2x" aria-hidden="true"></i></a>
 
-                  <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <!-- <li><a href='#'>In Progress</a></li> -->
-                    <li><a href='gallery.html'>Gallery</a></li>
-                    <li><a href='about.html'>About</a></li>
-                    <!-- <li><a href='#'>Contact</a></li> -->
-                </ul>
-            </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="about.html">About</a>
+                        </li>
 
-            <!-- Mobile Nav -->
-
-            <div class="mobile-nav">
-              <div class="logo"><i class="fa fa-car fa-2x" aria-hidden="true"></i></div>
-              <div class="hamburger-container">
-                 <button><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
-              </div>
-            </div>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#bottom">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
+
+        <script src="./app.js" charset="utf-8"></script>
 
         <section class='hero'>
             <div class="hero-text-container">
@@ -87,7 +92,7 @@
                   </div>
         </section>
 
-        <section class='quote'>
+        <section class='quote' id='bottom'>
           <div class='quote-h2'>
             <h2>Contact Us</h2>
           </div>
